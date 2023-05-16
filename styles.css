@@ -15,18 +15,34 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #3f3d41;
 }
 
+h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 600;
+
+}
+
 .inline-word-colour {
-    color: #db94c7;
+    color: #c89116;
 }
 
 .header {
     background: radial-gradient(#fff, #f0e2da);
+    padding-bottom: 60px;
+}
+
+.header .row {
+    margin: 30px 0;
 }
 
 .navbar {
@@ -36,7 +52,8 @@ h1 {
 }
 
 .logo img {
-    max-width: 75%;
+    max-width: 50%;
+    margin-left: -40px;
 }
 
 nav {
@@ -53,6 +70,24 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
+
+nav ul li a:hover {
+    color: #c89116;
+}
+
+#account--nav {
+    background: #c89116;
+    padding: 8px;
+    transition: background 0.5s, color 0.5s;
+
+}
+
+#account--nav:hover {
+    background: #d3a745;
+    color: #f6f4f2;
+
+}
+
 
 a {
     text-decoration: none;
@@ -96,14 +131,103 @@ p {
 
 .btn {
     display: inline-block;
-    background: #db94c7;
+    background: #c89116;
     color: #fff;
     padding: 15px 30px;
     margin: 30px 0;
     text-transform: uppercase;
+    transition: background 0.5s;
 }
 
 .btn:hover {
-    background: #e2a9d2;
+    background: #d3a745;
 
+}
+
+
+.categories {
+    background: #f6f4f2;
+    display: flex;
+    padding: 80px 0;
+
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    align-self: stretch;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 80px;
+    object-fit: cover;
+    align-self: stretch;
+    max-height: 300px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+
+}
+
+.featured-products {
+    display: flex;
+    background: radial-gradient(#f6f4f2, #f0e2da);
+    padding: 80px 0;
+
+}
+
+.featured-title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #3f3d41;
+}
+
+.featured-title::after {
+    content: "";
+    background: #c89116;
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rating {
+    margin: 5px 0;
+    color: #c89116;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
 }
