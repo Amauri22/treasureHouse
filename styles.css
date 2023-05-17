@@ -36,6 +36,10 @@ h4 {
     color: #c89116;
 }
 
+.upper {
+    border: 6px solid #c89116;
+}
+
 .header {
     background: radial-gradient(#fff, #f0e2da);
     padding-bottom: 60px;
@@ -236,12 +240,12 @@ p {
 .offer {
     display: grid;
     background: radial-gradient(#f6f4f2, #f0e2da);
-    margin-top: 80px;
-    padding: 30px 0;
+
+    padding: 80px 0;
 
 }
 
-.col-2 .offer-img{
+.col-2 .offer-img {
     padding: 70px;
 }
 
@@ -249,7 +253,72 @@ p {
     text-transform: uppercase;
     color: #c89116;
 }
+
 #exclusief--slogan {
     font-size: 16px;
     color: #4f4c51;
+}
+
+/*TESTIMONIAL*/
+.testimonial {
+    display: flex;
+    padding: 80px 0;
+    background: #f6f4f2;
+
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+
+}
+
+.fa-quote-left, .fa-quote-right {
+    color: #c89116;
+}
+
+.col-3 p {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #4f4c51;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer {
+    background: radial-gradient(#d3a745, #c89116);
+    color: #f6f4f2;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #f6f4f2;
+}
+
+.footer-col-3 h3, .footer-col-4 h3 {
+    color: #f6f4f2;
+    margin-bottom: 10px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#footer-logo {
+    max-width: 15%;
+
 }
