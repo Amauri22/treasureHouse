@@ -73,6 +73,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -344,4 +345,58 @@ ul {
     text-align: center;
     padding: 20px 0 0 0;
     font-size: 14px;
+}
+
+/*---------------------MODAL----------------*/
+
+#loginModal{
+    display: none;
+}
+.modal {
+    position: fixed; /* Blijft op positie bij scrollen */
+    z-index: 1; /* Ligt bovenop */
+    left: 0;
+    top: 0;
+    width: 100%; /* Volledige breedte */
+    height: 100%; /* Volledige hoogte */
+    overflow: auto; /* Schakel scrollen in indien nodig */
+    background-color: rgba(0, 0, 0, 0.4); /* Zwart met een beetje transparantie */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label,
+form input,
+form h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    background: radial-gradient(#f6f4f2, #f0e2da);
+    margin: 15% auto; /* 15% van boven en gecentreerd */
+    padding: 80px 80px;
+    border: 2px solid #c89116;
+    width: 30%; /* Kon breedte zijn, afhankelijk van schermgrootte */
+    position: relative;
+    box-shadow: 0 0 30px 0 rgba(200, 145, 22, 0.1);;
+}
+
+/* De sluitknop */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #c89116;
 }
