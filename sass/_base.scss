@@ -42,4 +42,14 @@ body {
 
 .container {
   display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  // 1140 / 8 = 142px = 14rem
+  // minmax => never bigger then 14rem, can be lower, but never lower then min content
+
+  // full bleed section
+  //without sidebar ==> Margin auto 0
+
+//grid-template-columns: repeat(12, unquote("[col-start] 1fr"));
+  // grid line can have multiple names ==> sidebar-end and full-start (for the full bleed start)
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
 }
