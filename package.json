@@ -1,0 +1,14 @@
+{
+  "name": "treasurehouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "author": "Marlon Hamaekers",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}

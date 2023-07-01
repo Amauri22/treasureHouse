@@ -1,0 +1,45 @@
+// COLOR VARIABLES
+$color-primary-light: #debd73;
+$color-primary: #c89116;
+$color-primary-dark: #78570d;
+
+$color-secondary: #101d2c;
+
+$accent-color: #DD99BB;
+
+
+$color-gray-light-1: #f9f7f6;
+$color-gray-light-2: #aaa;
+
+$color-gray-dark-1: #54483A;
+$color-gray-dark-2: #6D5D4B;
+
+//FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  // 10px/16px = 62.5% ==> 1 rem = 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-gray-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+}

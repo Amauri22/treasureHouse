@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+}
+
+.features {
+  background-color: #aaa;
+}
+
+.footer {
+  background-color: #101d2c;
+}
+
+.gallery {
+  background-color: #54483A;
+}
+
+.header {
+  background-color: #54483A;
+}
+
+.products {
+  background-color: #101d2c;
+}
+
+.sidebar {
+  background-color: #c89116;
+}
+
+.story__pictures {
+  background-color: #c89116;
+}
+.story__content {
+  background-color: #f9f7f6;
+}
+
+.top-products {
+  background-color: #101d2c;
+}
+
+/*# sourceMappingURL=style.css.map */
