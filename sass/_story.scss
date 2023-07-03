@@ -6,18 +6,22 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6,1fr);
     align-items: center;
+    background-image: linear-gradient(rgba($color-primary, 0.5) , rgba($color-primary, .5)) , url("../images/back.jpg");
   }
 
   &__img--1{
     width: 100%;
     grid-row: 2 / 6;
     grid-column: 2 / 6;
+    box-shadow: 0 2rem 5rem rgba(#000, .3);
   }
 
   &__img--2{
-    width: 100%;
+    width: 115%;
+    z-index: 1;
     grid-row: 4 / 6;
     grid-column: 4 / 7;
+    box-shadow: 0 2rem 5rem rgba(#000, .4);
   }
 
   &__img--3{
