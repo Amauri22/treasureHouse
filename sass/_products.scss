@@ -8,5 +8,11 @@
 }
 
 .product {
+  background: radial-gradient(rgba($color-white, 0.8), rgba($color-light-grad, 0.8));
+
+  &__img {
+    width: 100%;
+  }
+
 
 }

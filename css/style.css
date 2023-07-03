@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.7), rgba(240, 226, 218, 0.7)), url("../images/3-stacked-soap-bar-comp.jpg");
+  background-image: radial-gradient(rgba(255, 255, 255, 0.8), rgba(240, 226, 218, 0.8)), url("../images/soapbar-lemon.jpg");
   background-size: cover;
   background-position: top;
   grid-column: full-start/col-end 6;
@@ -72,6 +72,13 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+}
+
+.product {
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(240, 226, 218, 0.8));
+}
+.product__img {
+  width: 100%;
 }
 
 .sidebar {
@@ -128,6 +135,10 @@ body {
 .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 6rem;
 }
 
 .heading-2 {
