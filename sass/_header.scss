@@ -1,9 +1,31 @@
 .header {
   background-image: radial-gradient(
-                  rgba($color-white,0.8),
-                  rgba($color-light-grad, 0.8)),
+                  rgba($color-white,0.9),
+                  rgba($color-light-grad, 0.9)),
   url("../images/soapbar-lemon.jpg");
   background-size: cover;
   background-position: top;
   grid-column: full-start / col-end 6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content);
+  padding: 2rem;
+  gap: 3rem;
+
+  &__img {
+    max-width: 20%;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__heading {
+    color: $color-gray-dark-1;
+    font-size: 2rem;
+
+  }
+
+  &__btn{
+    justify-self: start;
+  }
 }

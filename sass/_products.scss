@@ -9,10 +9,70 @@
 
 .product {
   background: radial-gradient(rgba($color-white, 0.8), rgba($color-light-grad, 0.8));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
 
   &__img {
     width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1/2;
+    z-index: 1;
   }
 
+  &__like {
+    grid-row: 1/2;
+    grid-column: 2 / 3;
+    font-size: 2.5rem;
+    color: $color-primary;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem;
+  }
 
+  &__name {
+    grid-row: 1/2;
+    z-index: 2;
+    align-self: end;
+    font-family: $font-display;
+    transform: translateY(50%);
+
+    width: 80%;
+    justify-self: center;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $color-secondary;
+    font-weight: 400;
+    grid-column: 1 / -1;
+  }
+
+  &__type, &__ingredients {
+    margin-top: 2.5rem;
+  }
+
+  &__ingredients,
+  &__earth,
+  &__cost,
+  &__type {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+gap: 0.5rem;
+    i {
+      color: $color-primary;
+      font-size: 2rem;
+
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__btn {
+
+    grid-column: 1 / -1;
+    text-align: center;
+  }
 }
