@@ -1,8 +1,8 @@
 .header {
-  background-image: linear-gradient(
-                  rgba($color-light-grad, 0.93),
-                  rgba($color-light-grad, 0.93)),
-  url("../images/soapbar-lemon.jpg");
+  background-image: radial-gradient(
+                  rgba($color-white, 0.9),
+                  rgba($color-light-grad, 0.9)),
+  url("../images/soapbar.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / col-end 6;
@@ -37,7 +37,7 @@
   &__atyourservice-logos {
     display: flex;
     justify-content: space-around;
-    font-size: 1.3rem;
+    font-size: 1rem;
 
 
     &-container {
